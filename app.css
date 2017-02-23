@@ -1,15 +1,17 @@
 .progress {
     height: inherit;
-    background-color: green;
+    background-color: rgba(0, 188, 212, 0.19);
     transition: width 500ms linear;
     text-align: center;
     max-width: 100%;
+    font-weight: bold;
 }
 .container {
     max-width: 1024px;
-    background-color: grey;
+    background-color: white;
     height: 30px;
     margin-bottom: 10px;
+    border: 1px solid black;
     width: 100%;
 }
 .ctrlBtns {

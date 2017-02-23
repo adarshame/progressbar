@@ -6,7 +6,7 @@ var inputVal = {
         -18
     ],
     "bars": [
-        62,
+        22,
         45,
         62
     ],
@@ -25,7 +25,7 @@ var createProgressBars = function(count, initialValue, limit) {
     progressBar.className += count+'_progress progress';
     progressBar.innerHTML = initialValue > 0 ?  initialValue + '&nbsp%' : '';
     progressBar.style.width = initialValue > 0 ? initialValue + '%' : '0%';
-    progressBar.style.backgroundColor = initialValue > inputVal.limit ? 'red' : 'green';
+    progressBar.style.backgroundColor = initialValue > inputVal.limit ? 'red' : 'rgba(0, 188, 212, 0.19)';
     container.className += 'container';
     container.append(progressBar);
     document.getElementsByClassName("progressBars")[0].append(container);
@@ -36,7 +36,7 @@ var changeProgress = function(event) {
     var updatedValue = (parseInt(progressBar.style.width) + parseInt(event.target.name));
     progressBar.innerHTML = updatedValue > 0 ?  updatedValue + '&nbsp%' : '';
     progressBar.style.width = updatedValue > 0 ? updatedValue + '%' : '0%';
-    progressBar.style.backgroundColor = updatedValue > inputVal.limit ? 'red' : 'green';
+    progressBar.style.backgroundColor = updatedValue > inputVal.limit ? 'red' : 'rgba(0, 188, 212, 0.19)';
 }
 var createButtons = function(value) {
     var button = document.createElement('button');
