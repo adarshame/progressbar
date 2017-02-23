@@ -1,0 +1,22 @@
+.progress {
+    height: inherit;
+    background-color: green;
+    transition: width 500ms linear;
+    text-align: center;
+    max-width: 100%;
+}
+.container {
+    max-width: 1024px;
+    background-color: grey;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.ctrlBtns {
+    margin-top: 1%;
+}
+button {
+    margin-right: 1%;
+    min-width:5%;
+    min-height: 35px;
+}
