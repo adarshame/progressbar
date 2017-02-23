@@ -21,4 +21,5 @@ button {
     margin-right: 1%;
     min-width:5%;
     min-height: 35px;
+    cursor: pointer;
 }
